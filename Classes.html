@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Classes/styles-classes.css">
+    </head>
+    <body>
+        <h3> Morrowind:Classes/Skills</h3>
+        <hr>
+        <h6 style="margin-top:-5px"> <a href="Morrowind Main Page.html" target="_blank"> Morrowind</a></h6>
+        <p> In Morrowind, every humanoid character has a <b>class</b>, including your character and all NPCs. 
+            A character's class reflects their occupation, their position in society, or simply what 
+            sorts of things they are good at. In game terms, class comprises three different aspects of a character: 
+            Specialization, Favored Attributes, and Major/Minor Skills. 
+            Together, these choices have significant impact on the state of your character at the start of the game, 
+            as well as how they will develop as they increase in level. When you create a character, 
+            you will either create a custom class, or use one of the game's twenty-one predefined player-character 
+            classes. NPCs also use these classes, and there are many NPC-only classes.
+        </p>
+        <div>
+        <table border="1px" width="100%">
+            <tbody>
+                <tr style="background-color:#eaecf0">
+                    <th rowspan="2">Class</th>
+                    <th colspan="9">Combat</th>
+                    <th></th>
+                    <th colspan="9">Magic</th>
+                    <th></th>
+                    <th colspan="9">Stealth</th>
+                    <th rowspan="2"> Atributes </th>
+                </tr>
+                <tr style="background-color:#eaecf0">
+                    <th>
+                        <img src="Classes/MW-icon-skill-Armorer.jpg">
+                        <br>
+                        <small> ARM </small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Athletics.jpg">
+                        <br>
+                        <small> ATH </small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Axe.jpg">
+                        <br>
+                        <small> AXE </small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Block.jpg">
+                        <br>
+                        <small> BLK </small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Blunt_Weapon.jpg">
+                        <br>
+                        <small> BLU </small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Heavy_Armor.jpg">
+                        <br>
+                        <small> HVA </small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Long_Blade.jpg">
+                        <br>
+                        <small> LBL </small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Medium_Armor.jpg">
+                        <br>
+                        <small> MDA </small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Spear.jpg">
+                        <br>
+                        <small> SPR </small>
+                    </th>
+                    <th></th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Alchemy.jpg">
+                        <br>
+                        <small>ALC</small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Alteration.jpg">
+                        <br>
+                        <small>ALT</small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Conjuration.jpg">
+                        <br>
+                        <small>CON</small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Destruction.jpg">
+                        <br>
+                        <small>DES</small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Enchant.jpg">
+                        <br>
+                        <small>ENC</small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Illusion.jpg">
+                        <br>
+                        <small>ILL</small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Mysticism.jpg">
+                        <br>
+                        <small>MYS</small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Restoration.jpg">
+                        <br>
+                        <small>RES</small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Unarmored.jpg">
+                        <br>
+                        <small>UNA</small>
+                    </th>
+                    <th></th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Acrobatics.jpg">
+                        <br>
+                        <small>ACR</small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Hand-to-hand.jpg">
+                        <br>
+                        <small>H2H</small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Light_Armor.jpg">
+                        <br>
+                        <small>LTA</small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Marksman.jpg">
+                        <br>
+                        <small>MAR</small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Mercantile.jpg">
+                        <br>
+                        <small>MER</small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Security.jpg">
+                        <br>
+                        <small>SEC</small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Short_Blade.jpg">
+                        <br>
+                        <small>SBL</small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Sneak.jpg">
+                        <br>
+                        <small>SNK</small>
+                    </th>
+                    <th>
+                        <img src="Classes/MW-icon-skill-Speechcraft.jpg">
+                        <br>
+                        <small>SPE</small>
+                    </th>
+                </tr>
+                <tr align="center">
+                    <td>Acrobat</a></td>
+                    <td></td>
+                    <td style="background-color:#eaecf0">M</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="background-color:#eaecf0">m</td>
+                    <td></td>
+                    <td></td>
+                    <td style="background-color:#eaecf0">m</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="background-color:#eaecf0">M</td>
+                    <td></td>
+                    <th style="background-color:#eaecf0">M</th>
+                    <th style="background-color:#eaecf0">m</th>
+                    <th style="background-color:#eaecf0">m</th>
+                    <th style="background-color:#eaecf0">M</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th style="background-color:#eaecf0">M</th>
+                    <th style="background-color:#eaecf0">m</th>
+                    <td style="white-space:nowrap"><span style="font-size: x-small">AGL, END</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Agent</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td></td> 
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td> <!-- <td></td> -->
+                        <th style="background-color:#eaecf0">M</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">AGL, PER</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Archer</a></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td style="background-color:#eaecf0">m</td> 
+                        <td></td> <!-- <td></td> -->
+                        <td></td> 
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td> <!-- <td></td> -->
+                        <th style="background-color:#eaecf0">M</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">AGL, STR</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Assassin</a></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td style="background-color:#eaecf0">m</td> 
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> <!-- <td></td> -->
+                        <th style="background-color:#eaecf0">M</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th></th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">AGL, SPD</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Barbarian</a></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td></td> 
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td> <!-- <td></td> -->
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">SPD, STR</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Bard</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td></td> 
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> <!-- <td></td> -->
+                        <th style="background-color:#eaecf0">M</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">INT, PER</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Battlemage</a></td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td style="background-color:#eaecf0">m</td> 
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td>
+                        <td></td> <!-- <td></td> -->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">INT, STR</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Crusader</a></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td style="background-color:#eaecf0">m</td> 
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td> <!-- <td></td> -->
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">AGL, STR</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Healer</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td style="background-color:#eaecf0">m</td> 
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td> <!-- <td></td> -->
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">PER, WIL</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Knight</a></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td></td> 
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td> <!-- <td></td> -->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">PER, WIL</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Mage</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td style="background-color:#eaecf0">m</td> 
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td> <!-- <td></td> -->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th></th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">INT, WIL</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Monk</a></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td></td> 
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td> <!-- <td></td> -->
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th></th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">AGL, WIL</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Nightblade</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td></td> 
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td> <!-- <td></td> -->
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">SPD, WIL</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Pilgrim</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td style="background-color:#eaecf0">m</td> 
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td></td> <!-- <td></td> -->
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">END, PER</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Rogue</a></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td></td> 
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> <!-- <td></td> -->
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">PER, SPD</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Scout</a></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td style="background-color:#eaecf0">m</td> 
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td> <!-- <td></td> -->
+                        <th></th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th></th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">PER, SPD</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Sorcerer</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td></td> 
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td></td>
+                        <td></td> <!-- <td></td> -->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th></th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">END, INT</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Spellsword</a></td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td style="background-color:#eaecf0">m</td> 
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td></td> <!-- <td></td> -->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">END, WIL</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Thief</a></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td></td> 
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> <!-- <td></td> -->
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">AGL, SPD</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Warrior</a></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td style="background-color:#eaecf0">m</td> 
+                        <td></td> <!-- <td></td> -->
+                        <td></td> 
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> <!-- <td></td> -->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">END, STR</span></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Witchhunter</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> 
+                        <td></td> <!-- <td></td> -->
+                        <td style="background-color:#eaecf0">M</td> 
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">M</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td>
+                        <td style="background-color:#eaecf0">m</td>
+                        <td></td> <!-- <td></td> -->
+                        <th></th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th style="background-color:#eaecf0">M</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th style="background-color:#eaecf0">m</th>
+                        <th></th>
+                        <td style="white-space:nowrap"><span style="font-size: x-small">AGL, INT</span></td>
+                    </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <h3> What Defines a Class </h3>
+        <hr>
+        <p>
+            Each class has one of three Specializations: Combat, Magic, or Stealth. 
+            Each of the twenty-seven Skills is also classified into one of these Specializations. 
+            Your character enjoys a five-point bonus to their starting proficiency in the nine Skills 
+            that match the Specialization of their class. They also increase those Skills faster, needing 
+            only 80% of the normal experience points for each Skill level. In the table above, the shaded 
+            set of Skills for each class indicates their Specialization.
+            <br>
+            Each class "favors" two of the eight primary Attributes. Your character will start with ten extra points 
+            in the favored Attributes of their class, added to the values determined by their race and gender. 
+            The final column of the table above shows the favored attributes of each class.
+            <br>
+            Each class categorizes five Skills as "Major", five others as "Minor", and the remaining seventeen as 
+            "Miscellaneous". The greatest significance of this is that only Major and Minor Skills advance your 
+            progress toward the next level when they increase. Another benefit, however, is that your character's 
+            proficiencies will start at 30 in each Major Skill and 15 in each Minor Skill. 
+            Miscellaneous Skills start at 5. These are the values before any bonuses from race or Specialization. 
+            The experience points required to increase a Skill are only 75% of normal for Major Skills, 
+            but they are increased to 125% of normal for Miscellaneous Skills. In the table above, Major Skills are 
+            marked with a capital M, and Minor Skills are marked with a lower-case m.
+        </p>
+        <h3> Choosing a Class </h3>
+        <hr>
+        <p>
+            Your character's class is set near the beginning of the game, 
+            when you first talk to Socucius Ergalla in the Seyda Neen Census and Excise Office. 
+            You have three options for how to go about it. If you choose to "answer his questions", h
+            e will ask ten questions and suggest a class based on your answers. 
+            If you choose to "give him the info", you will be able to select one of the predefined classes. 
+            The third option, "fill out the forms", will allow you to create and name your own custom class 
+            by selecting the Specialization, Favored Attributes, and Major/Minor Skills. 
+            You can try any of these options and still have the chance to change your mind and try a different one, 
+            but once you confirm all your choices with Socucius, your race, gender, class, and birthsign are 
+            fixed and cannot be changed.
+            <br>
+            Choosing a class is largely a matter of personal taste and style. 
+            Fortunately, your choice of class does almost nothing to limit the opportunities available 
+            to you for character development, plot, or gameplay. It can simply make some opportunities 
+            require more or less effort to exploit. For example, your character need not be a Thief, 
+            nor even a Stealth specialist, to join the Thieves Guild, but you may find the Thieves Guild 
+            quests to be more challenging if your class considers Skills like Security and Sneak to be Miscellaneous.
+            <br>
+            Therefore, creating a custom class has no inherent disadvantages, 
+            but it does require extra care and consideration. A custom class thrown 
+            together haphazardly has every chance of being frustrating to play. 
+            The most crippling blunder, arguably, is a lopsided distribution of governing Attributes among your Major, 
+            Minor, and Miscellaneous Skills. This can make it extremely challenging to get the best Attribute 
+            increases from each level up and cause some Attributes to lag far behind the others when you reach 
+            higher levels.
+            <br>
+            It's also very helpful to learn exactly what actions build experience in each Skill, 
+            along with the risks and obstacles to performing those actions successfully. 
+            If a Skill starts low because it's Miscellaneous, it can be very tedious or even dangerous to 
+            gain experience in it through practice. Beginning with higher proficiencies in some complementary 
+            skills can reduce this handicap. For example, it's less dangerous to wield a weapon you are not 
+            skilled with when you wear armor that you are skilled in. It's also less time-consuming and 
+            expensive to use the weapon repeatedly if you're skilled at repairing it yourself. 
+            Taking these things into consideration when choosing Major and Minor skills for a custom 
+            class can make your character more enjoyable to play, and allow you to rely on training less often.
+            <br>
+            One final consideration for custom classes is the option of 
+            choosing Luck as a favored attribute. None of the predefined 
+            classes do so, but it can be a significant advantage. 
+            Taking Luck as a favored attribute will effectively add 5 points to every attribute 
+            for the purpose of chance of success (but not derived status such as max health or carry weight), 
+            which makes your character better at everything both early on, and 
+            (since luck adds to success chance even when an attribute has capped at 100) late game. 
+            Since Luck can never increase more than one point each level, it will tend to grow much 
+            more slowly than the other primary attributes, which the instant ten-point bonus for a 
+            class that favors it substantially mitigates.
+        </p>
+    </body>
+</html>

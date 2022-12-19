@@ -1,0 +1,85 @@
+td.thumbinner {
+    border: 1px solid #c8ccd1;
+    padding: 3px;
+    background-color: #f8f9fa;
+    font-size: 94%;
+    text-align: center;
+    overflow: hidden;
+}
+
+body {
+    background-color: #f7f1cf;
+}
+
+h2, h3 {
+    color: #000;
+    background: none;
+    font-weight: normal;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 0.5em;
+    padding-bottom: 0.17em;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+h6 {
+    margin-top:auto
+}
+
+ul {
+    list-style: square;
+}
+
+#cityinfo {
+    border: 1px solid #c8ccd1;
+    padding: 3px;
+    background-color: #f8f9fa;
+    font-size: 94%;
+    text-align: center;
+    overflow: hidden;
+}
+
+#inner{
+    border: 1px solid #c8ccd1;
+    padding: 3px;
+    background-color: #f8f9fa;
+    font-size: 94%;
+    text-align: center;
+}
+.mw-Contents{
+    border: 2px solid grey;
+    border-radius: 3px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #f8f9fa;
+}
+
+th{
+    background-color: #f5deb3;
+    border: 1px solid;
+}
+td{
+    border: 1px solid;
+    background-color: white;
+}
+.mw-great-houses-table{
+    border: 1px solid #c8ccd1;
+    padding: 3px;
+    text-align: center;
+    overflow: hidden;
+}
+
+code{
+    background-color: #f8f9fa;
+    border: 1px solid #c8ccd1;
+}
+.thumbcaption{
+    border: 0;
+    line-height: 1.4em;
+    padding: 3px;
+    font-size: 94%;
+}
+
+table{
+    border: 1px solid;
+}

@@ -1,0 +1,47 @@
+body {
+    background-color: #f7f1cf;
+}
+
+.Contents{
+    border: 2px solid grey;
+    border-radius: 3px;
+    width: fit-content;
+    height: fit-content;
+}
+
+ul {
+    list-style: square;
+}
+
+hr {
+    margin-top: -15px;
+}
+
+img {
+    float:right;
+    border: 3px solid;
+    
+}
+
+.Tablesetting {
+    position:relative; right:40px; top:-150px;
+}
+
+.Vvardenfell {
+    float:left;
+    border: 3px solid; 
+}
+
+.right{
+    clear: right; 
+    float: right; 
+    margin-bottom: .5em; 
+    padding: .5em 0 .8em 1.4em;
+}
+
+.left{
+    clear: left; 
+    float: left; 
+    margin-bottom: .5em; 
+    padding: .5em 0 .8em 1.4em;
+}
